@@ -1,4 +1,7 @@
-# 첫 번째 풀이 Runtime: 59ms
+# 첫 번째 풀이: 일일이 비교, Runtime: 59ms
+import re
+
+
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         left, right = 0, len(s) - 1
@@ -20,17 +23,25 @@ class Solution:
                     left += 1
         return True
 
-# 두 번째 풀이 Runtime: 694ms
+# 두 번째 풀이: 데크 자료형 이용, Runtime: 69ms
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        str = []
+        strs = collections.deque()
         for char in s:
             if char.isalnum():
-                str.append(char.lower())
+                strs.append(char.lower())
 
         # 팰린드롬 판별
-        while len(str) > 1:
-            if str.pop(0) != str.pop():
+        while len(strs) > 1:
+            if strs.popleft() != strs.pop():
                 return False
 
         return True
+
+# 세 번째 풀이: 슬라이싱 사용, Runtime: 54ms
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        s = s.lower()
+        # 정규식으로 불필요한 문자 필터링
+        s = re.sub('[^a-z0-9]', '', s)
+        return s == s[::-1]
