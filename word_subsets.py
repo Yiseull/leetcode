@@ -1,3 +1,5 @@
+# 오답. 아직 문제 풀이 중
+
 def wordSubsets(words1, words2):
     result = []
     for i in words1:
