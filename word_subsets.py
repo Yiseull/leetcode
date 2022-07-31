@@ -1,6 +1,3 @@
-words1 = ["amazon","apple","facebook","google","leetcode"]
-words2 = ["e","o"]
-
 def wordSubsets(words1, words2):
     result = []
     for i in words1:
@@ -12,5 +9,3 @@ def wordSubsets(words1, words2):
         if include == 1:
             result.append(i)
     return result
-
-print(wordSubsets(words1, words2))
