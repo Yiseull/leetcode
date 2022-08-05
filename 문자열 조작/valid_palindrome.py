@@ -1,6 +1,6 @@
 # 첫 번째 풀이: 일일이 비교, Runtime: 59ms
+import collections
 import re
-
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
