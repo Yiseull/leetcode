@@ -1,22 +1,16 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        if len(s) < 2:
-            return False
-
         stack = []
-        for bracket in s:
-            if bracket == '(' or bracket == '{' or bracket == '[':
-                stack.append(bracket)
-            elif bracket == ')':
-                if len(stack) == 0 or stack.pop() != '(':
-                    return False
-            elif bracket == '}':
-                if len(stack) == 0 or stack.pop() != '{':
-                    return False
-            elif bracket == "]":
-                if len(stack) == 0 or stack.pop() != '[':
-                    return False
+        table = {
+            ')': '(',
+            '}': '{',
+            ']': '[',
+        }
 
-        if len(stack) != 0:
-            return False
-        return True
+        # 스택 이용 예외 처리 및 일치 여부 판별
+        for char in s:
+            if char not in table:
+                stack.append(char)
+            elif not stack or table[char] != stack.pop():
+                return False
+        return len(stack) == 0
