@@ -1,16 +1,12 @@
 class Solution:
     def checkIfPangram(self, sentence: str) -> bool:
-        check = [False] * 26
+        pangram = set()
 
-        for char in (sentence):
-            i = ord(char) - 97
-            if check[i]:
-                continue
-            else:
-                check[i] = True
+        for letter in sentence:
+            pangram.add(letter)
 
-        for c in check:
-            if not c:
+        for i in range(97, 123):
+            if chr(i) not in pangram:
                 return False
 
         return True
