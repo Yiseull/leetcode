@@ -1,5 +1,6 @@
 import collections
 
+# My Solution
 class MyHashMap:
 
     def __init__(self):
@@ -16,3 +17,72 @@ class MyHashMap:
     def remove(self, key: int) -> None:
         if self.dic.get(key) is not None:
             del self.dic[key]
+
+
+class ListNode:
+    def __init__(self, key=None, value=None):
+        self.key = key
+        self.value = value
+        self.next = None
+
+# 파이썬 알고리즘 인터뷰 Solution
+# 개별 체이닝 방식을 이용한 해시 테이블 구현
+class MyHashMap:
+
+    def __init__(self):
+        self.size = 1000
+        self.table = collections.defaultdict(ListNode)
+
+    def put(self, key: int, value: int) -> None:
+        index = key % self.size
+        # 인덱스에 노드가 없다면 삽입 후 종료
+        if self.table[index].value is None:
+            self.table[index] = ListNode(key, value)
+            return
+
+            # 인덱스에 노드가 존재하는 경우 연결 리스트 처리
+        p = self.table[index]
+        while p:
+            if p.key == key:
+                p.value = value
+                return
+            if p.next is None:
+                break
+            p = p.next
+        p.next = ListNode(key, value)
+
+    def get(self, key: int) -> int:
+        index = key % self.size
+        if self.table[index].value is None:
+            return -1
+
+        # 노드가 존재할 때 일치하는 키 탐색
+        p = self.table[index]
+        while p:
+            if p.key == key:
+                return p.value
+            p = p.next
+        return -1
+
+    def remove(self, key: int) -> None:
+        index = key % self.size
+        if self.table[index].value is None:
+            return
+
+        # 인덱스의 첫 번째 노드일 때 삭제 처리
+        p = self.table[index]
+        if p.key == key:
+            self.table[index] = ListNode() if p.next is None else p.next
+            return
+
+        # 연결 리스트 노드 삭제
+        '''
+        인덱스의 첫 번째 노드부터 일치하는 경우는 앞에서 처리됐기 때문에 반드시 한 번 이상 반복
+        따라서 prev, p = p, p.next
+        '''
+        prev = p
+        while p:
+            if p.key == key:
+                prev.next = p.next
+                return
+            prev, p = p, p.next
