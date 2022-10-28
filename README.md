@@ -2,12 +2,12 @@
 파이썬으로 푼 LeetCode 소스코드 저장소입니다.
 패키지가 있는 소스코드는 "파이썬 알고리즘 인터뷰" 코드 입니다.
 
-# Languages
+## Languages
 Python3
 
-# Solved Problems
+## Solved Problems
 + Easy
-  + 1. Two Sum
+  + '''1'''. Two Sum
   + 2. Add Two Numbers
   + 5. Longest Palindromic Substring
   + 20. Valid Parentheses
