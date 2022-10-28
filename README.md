@@ -1,6 +1,5 @@
 # leetcode-python3
 파이썬으로 푼 LeetCode 소스코드 저장소입니다.
-패키지가 있는 소스코드는 "파이썬 알고리즘 인터뷰" 코드 입니다.
 
 ## Language 
 Python3
@@ -21,6 +20,7 @@ Python3
   + 557\. Reverse Words in a String III
   + 561\. Array Partition
   + 706\. Design HashMap
+  + 771\. Jewels and Stones
   + 819\. Most Common Word
   + 1662\. Check If Two String Arrays are Equivalent
   + 1832\. Check if the Sentence Is Pangram
