@@ -7,7 +7,7 @@ Python3
 
 ## Solved Problems
 + Easy
-  + '''1'''. Two Sum
+  +  1. Two Sum
   + 2. Add Two Numbers
   + 5. Longest Palindromic Substring
   + 20. Valid Parentheses
