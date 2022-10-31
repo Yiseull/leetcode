@@ -20,6 +20,7 @@ Python3
   + 557\. Reverse Words in a String III
   + 561\. Array Partition
   + 706\. Design HashMap
+  + 766\. Toeplitz Matrix
   + 771\. Jewels and Stones
   + 819\. Most Common Word
   + 1662\. Check If Two String Arrays are Equivalent
