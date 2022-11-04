@@ -17,6 +17,7 @@ Python3
   + 232\. Implement Queue using Stacks
   + 234\. Palindrome Linked List
   + 344\. Reverse String
+  + 345\. Reverse Vowels of a String
   + 557\. Reverse Words in a String III
   + 561\. Array Partition
   + 706\. Design HashMap
