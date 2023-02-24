@@ -41,6 +41,7 @@ Python3
   + 238\. [Product of Array Except Sell](https://github.com/Yiseull/leetcode-python3/blob/master/%EB%B0%B0%EC%97%B4/product_of_array_except_self.py)
   + 316\. [Remove Duplicate Letters](https://github.com/Yiseull/leetcode-python3/blob/master/%EC%8A%A4%ED%83%9D%2C%20%ED%81%90/remove_duplicate_letters.py)
   + 328\. [Odd Even Linked List](https://github.com/Yiseull/leetcode-python3/blob/master/%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8/odd_even_linked_list.py)
+  + 540\. [Single Element in a Sorted Array](https://github.com/Yiseull/leetcode-python3/blob/master/single_element_in_a_sorted_array.py)
   + 622\. [Design Circular Queue](https://github.com/Yiseull/leetcode-python3/blob/master/%EC%8A%A4%ED%83%9D%2C%20%ED%81%90/design_circular_queue.py)
   + 641\. [Design Circular Deque](https://github.com/Yiseull/leetcode-python3/blob/master/%EB%8D%B0%ED%81%AC%2C%20%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84%20%ED%81%90/design_circular_deque.py)
   + 739\. [Daily Temperatures](https://github.com/Yiseull/leetcode-python3/blob/master/%EC%8A%A4%ED%83%9D%2C%20%ED%81%90/daily_temperatures.py)
